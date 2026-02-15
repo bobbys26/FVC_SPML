@@ -5,53 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tournament Dashboard</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <style>
-        /* Add glass effect styling */
-        .glass {
-            background: rgba(255, 255, 255, 0.3);
-            backdrop-filter: blur(10px);
-            border-radius: 10px;
-        }
-        /* Smooth animations */
-        .fade-in {
-            animation: fadeIn 1s;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-    </style>
 </head>
 <body class="bg-gray-100">
-    <div class="container mx-auto p-5">
-        <h1 class="text-3xl font-bold text-center">Tournament Dashboard</h1>
-        <div class="flex justify-center pt-5">
-            <div class="tabs flex space-x-4">
-                <button class="tab glass py-2 px-4 rounded focus:outline-none">Standings</button>
-                <button class="tab glass py-2 px-4 rounded focus:outline-none">Match Results</button>
-                <button class="tab glass py-2 px-4 rounded focus:outline-none">Schedule</button>
-                <button class="tab glass py-2 px-4 rounded focus:outline-none">Statistics</button>
+    <header class="bg-blue-600 text-white p-4">
+        <h1 class="text-2xl font-bold">Tournament Dashboard</h1>
+    </header>
+
+    <main class="p-4">
+        <section class="my-6">
+            <h2 class="font-semibold text-xl">Tournament Data</h2>
+            <div class="bg-white p-4 rounded shadow">
+                <h3 class="font-bold">Upcoming Matches</h3>
+                <ul class="list-disc ml-5">
+                    <li>Match 1: Team A vs Team B</li>
+                    <li>Match 2: Team C vs Team D</li>
+                </ul>
             </div>
-        </div>
-        <div class="content fade-in">
-            <!-- Include your tournament data here -->
-            <div id="standings">
-                <h2 class="text-xl font-semibold">Standings</h2>
-                <!-- Include standings data -->
+        </section>
+
+        <section class="my-6">
+            <h2 class="font-semibold text-xl">Standings</h2>
+            <div class="bg-white p-4 rounded shadow">
+                <h3 class="font-bold">Current Standings</h3>
+                <ul class="list-disc ml-5">
+                    <li>1. Team A - 10 Points</li>
+                    <li>2. Team B - 8 Points</li>
+                    <li>3. Team C - 6 Points</li>
+                </ul>
             </div>
-            <div id="match-results">
-                <h2 class="text-xl font-semibold">Match Results</h2>
-                <!-- Include match results data -->
+        </section>
+
+        <section class="my-6">
+            <h2 class="font-semibold text-xl">Match Schedules</h2>
+            <div class="bg-white p-4 rounded shadow">
+                <h3 class="font-bold">Schedule</h3>
+                <ul class="list-disc ml-5">
+                    <li>Feb 20: Match 1</li>
+                    <li>Feb 25: Match 2</li>
+                </ul>
             </div>
-            <div id="schedule">
-                <h2 class="text-xl font-semibold">Schedule</h2>
-                <!-- Include schedule data -->
+        </section>
+
+        <section class="my-6">
+            <h2 class="font-semibold text-xl">Statistics</h2>
+            <div class="bg-white p-4 rounded shadow">
+                <h3 class="font-bold">Player Statistics</h3>
+                <ul class="list-disc ml-5">
+                    <li>Player 1: 5 Goals</li>
+                    <li>Player 2: 3 Assists</li>
+                </ul>
             </div>
-            <div id="statistics">
-                <h2 class="text-xl font-semibold">Statistics</h2>
-                <!-- Include statistics data -->
-            </div>
-        </div>
-    </div>
+        </section>
+    </main>
+
+    <footer class="text-center p-4 bg-gray-800 text-white">
+        <p>&copy; 2026 Tournament Dashboard</p>
+    </footer>
 </body>
 </html>
