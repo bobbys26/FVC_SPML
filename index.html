@@ -1,81 +1,31 @@
 <!DOCTYPE html>
-<html lang="en" class="bg-gray-200 dark:bg-gray-800 transition-colors duration-500">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tournament Dashboard</title>
+    <title>Volleyball Tournament</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <style>
-        .fade-in {
-            animation: fadeIn 0.5s ease-in;
-        }
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-    </style>
 </head>
-<body class="fade-in">
-    <header class="p-4 bg-blue-600 text-white dark:bg-blue-800">
-        <h1 class="text-2xl font-bold">Tournament Dashboard</h1>
+<body class="bg-gray-100 text-gray-800">
+    <header class="bg-blue-600 text-white p-4">
+        <h1 class="text-2xl font-bold">Volleyball Tournament</h1>
     </header>
-
-    <div class="container mx-auto p-4">
-        <section id="standings" class="mb-8">
-            <h2 class="text-xl font-semibold">Standings</h2>
-            <!-- Standings Table -->
-            <table class="min-w-full bg-white dark:bg-gray-700 rounded-lg overflow-hidden shadow-lg">
-                <thead class="bg-gray-100 dark:bg-gray-600 text-gray-800 dark:text-white">
-                    <tr>
-                        <th class="py-2">Team</th>
-                        <th class="py-2">Wins</th>
-                        <th class="py-2">Losses</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!-- Sample data rows -->
-                    <tr class="hover:bg-gray-200 dark:hover:bg-gray-600">
-                        <td class="py-2 px-4">Team A</td>
-                        <td class="py-2 px-4">10</td>
-                        <td class="py-2 px-4">2</td>
-                    </tr>
-                    <tr class="hover:bg-gray-200 dark:hover:bg-gray-600">
-                        <td class="py-2 px-4">Team B</td>
-                        <td class="py-2 px-4">8</td>
-                        <td class="py-2 px-4">4</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-        <section id="match-results" class="mb-8">
-            <h2 class="text-xl font-semibold">Match Results</h2>
-            <!-- Match Results List -->
+    <main class="p-4">
+        <section class="mb-4">
+            <h2 class="text-xl font-semibold">Upcoming Matches</h2>
             <ul class="list-disc pl-5">
-                <li>Team A vs Team B: 3-1</li>
-                <li>Team C vs Team D: 2-4</li>
+                <li>Match 1: Team A vs Team B</li>
+                <li>Match 2: Team C vs Team D</li>
+                <li>Match 3: Team E vs Team F</li>
             </ul>
         </section>
-
-        <section id="schedule" class="mb-8">
-            <h2 class="text-xl font-semibold">Schedule</h2>
-            <!-- Schedule List -->
-            <ul class="list-disc pl-5">
-                <li>February 16: Team A vs Team C</li>
-                <li>February 17: Team B vs Team D</li>
-            </ul>
+        <section>
+            <h2 class="text-xl font-semibold">Tournament Information</h2>
+            <p>The annual Volleyball tournament will take place on the 20th of February, 2026. Join us for an exciting day of matches!</p>
         </section>
-
-        <section id="statistics" class="mb-8">
-            <h2 class="text-xl font-semibold">Statistics</h2>
-            <!-- Statistics Content -->
-            <p>Total Matches: 20</p>
-            <p>Average Goals: 3.5</p>
-        </section>
-    </div>
+    </main>
+    <footer class="bg-gray-800 text-white p-4 text-center">
+        <p>&copy; 2026 Volleyball Association</p>
+    </footer>
 </body>
 </html>
