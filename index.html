@@ -3,63 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tournament Dashboard</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>FVC 2026 SPML Volleyball Tournament</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+        }
+    </style>
 </head>
-<body class="bg-gray-100">
-    <header class="bg-blue-600 text-white p-4">
-        <h1 class="text-2xl font-bold">Tournament Dashboard</h1>
-    </header>
-
-    <main class="p-4">
-        <section class="my-6">
-            <h2 class="font-semibold text-xl">Tournament Data</h2>
-            <div class="bg-white p-4 rounded shadow">
-                <h3 class="font-bold">Upcoming Matches</h3>
-                <ul class="list-disc ml-5">
-                    <li>Match 1: Team A vs Team B</li>
-                    <li>Match 2: Team C vs Team D</li>
-                </ul>
-            </div>
+<body class="bg-gray-900 text-white">
+    <div class="container mx-auto p-6 glass-effect">
+        <h1 class="text-4xl font-bold text-center">FVC 2026 SPML Volleyball Tournament</h1>
+        
+        <!-- Standings -->
+        <section class="mt-8">
+            <h2 class="text-2xl font-semibold">Standings</h2>
+            <!-- Standings data goes here -->
         </section>
 
-        <section class="my-6">
-            <h2 class="font-semibold text-xl">Standings</h2>
-            <div class="bg-white p-4 rounded shadow">
-                <h3 class="font-bold">Current Standings</h3>
-                <ul class="list-disc ml-5">
-                    <li>1. Team A - 10 Points</li>
-                    <li>2. Team B - 8 Points</li>
-                    <li>3. Team C - 6 Points</li>
-                </ul>
-            </div>
+        <!-- Match Results -->
+        <section class="mt-8">
+            <h2 class="text-2xl font-semibold">Match Results</h2>
+            <!-- Match results data goes here -->
         </section>
 
-        <section class="my-6">
-            <h2 class="font-semibold text-xl">Match Schedules</h2>
-            <div class="bg-white p-4 rounded shadow">
-                <h3 class="font-bold">Schedule</h3>
-                <ul class="list-disc ml-5">
-                    <li>Feb 20: Match 1</li>
-                    <li>Feb 25: Match 2</li>
-                </ul>
-            </div>
+        <!-- Schedule -->
+        <section class="mt-8">
+            <h2 class="text-2xl font-semibold">Schedule</h2>
+            <!-- Schedule data goes here -->
         </section>
 
-        <section class="my-6">
-            <h2 class="font-semibold text-xl">Statistics</h2>
-            <div class="bg-white p-4 rounded shadow">
-                <h3 class="font-bold">Player Statistics</h3>
-                <ul class="list-disc ml-5">
-                    <li>Player 1: 5 Goals</li>
-                    <li>Player 2: 3 Assists</li>
-                </ul>
-            </div>
+        <!-- Statistics -->
+        <section class="mt-8">
+            <h2 class="text-2xl font-semibold">Statistics</h2>
+            <!-- Statistics data goes here -->
         </section>
-    </main>
-
-    <footer class="text-center p-4 bg-gray-800 text-white">
-        <p>&copy; 2026 Tournament Dashboard</p>
-    </footer>
+    </div>
 </body>
 </html>
