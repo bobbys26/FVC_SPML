@@ -1,45 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FVC 2026 SPML Volleyball Tournament</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
-    <style>
-        .glass-effect {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.18);
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FVC 2026 SPML Volleyball Tournament</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="bg-gray-900 text-white">
-    <div class="container mx-auto p-6 glass-effect">
-        <h1 class="text-4xl font-bold text-center">FVC 2026 SPML Volleyball Tournament</h1>
-        
-        <!-- Standings -->
-        <section class="mt-8">
-            <h2 class="text-2xl font-semibold">Standings</h2>
-            <!-- Standings data goes here -->
-        </section>
+<body class="bg-gray-100">
+  <header class="bg-blue-600 text-white p-4">
+    <h1 class="text-3xl font-bold">FVC 2026 SPML Volleyball Tournament</h1>
+  </header>
 
-        <!-- Match Results -->
-        <section class="mt-8">
-            <h2 class="text-2xl font-semibold">Match Results</h2>
-            <!-- Match results data goes here -->
-        </section>
+  <main class="p-4">
+    <section class="mb-6">
+      <h2 class="text-2xl font-semibold">Match Results</h2>
+      <table class="min-w-full bg-white border border-gray-300">
+        <thead>
+          <tr>
+            <th class="border border-gray-300 p-2">Match</th>
+            <th class="border border-gray-300 p-2">Result</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="border border-gray-300 p-2">Team A vs Team B</td>
+            <td class="border border-gray-300 p-2">3 - 1</td>
+          </tr>
+          <tr>
+            <td class="border border-gray-300 p-2">Team C vs Team D</td>
+            <td class="border border-gray-300 p-2">2 - 3</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
 
-        <!-- Schedule -->
-        <section class="mt-8">
-            <h2 class="text-2xl font-semibold">Schedule</h2>
-            <!-- Schedule data goes here -->
-        </section>
+    <section class="mb-6">
+      <h2 class="text-2xl font-semibold">Standings</h2>
+      <table class="min-w-full bg-white border border-gray-300">
+        <thead>
+          <tr>
+            <th class="border border-gray-300 p-2">Team</th>
+            <th class="border border-gray-300 p-2">Points</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="border border-gray-300 p-2">Team A</td>
+            <td class="border border-gray-300 p-2">10</td>
+          </tr>
+          <tr>
+            <td class="border border-gray-300 p-2">Team B</td>
+            <td class="border border-gray-300 p-2">8</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
 
-        <!-- Statistics -->
-        <section class="mt-8">
-            <h2 class="text-2xl font-semibold">Statistics</h2>
-            <!-- Statistics data goes here -->
-        </section>
-    </div>
+    <section class="mb-6">
+      <h2 class="text-2xl font-semibold">Schedule</h2>
+      <ul class="list-disc list-inside">
+        <li>Match 1: Team A vs Team B - 2026-02-25</li>
+        <li>Match 2: Team C vs Team D - 2026-02-26</li>
+      </ul>
+    </section>
+
+    <section class="mb-6">
+      <h2 class="text-2xl font-semibold">Statistics</h2>
+      <p>Detailed statistics of the matches will go here.</p>
+    </section>
+  </main>
+
+  <footer class="bg-blue-600 text-white p-4">
+    <p>&copy; 2026 FVC Volleyball Tournament</p>
+  </footer>
 </body>
 </html>
