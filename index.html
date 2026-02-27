@@ -1,77 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FVC 2026 SPML Volleyball Tournament</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>FVC 2026 SPML Volleyball Tournament</title>
+    <style>
+        .glass {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: rgba(59, 130, 246, 0.3);
+        }
+        tr:nth-child(even) {
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+    </style>
 </head>
-<body class="bg-gray-100">
-  <header class="bg-blue-600 text-white p-4">
-    <h1 class="text-3xl font-bold">FVC 2026 SPML Volleyball Tournament</h1>
-  </header>
+<body class="bg-gray-900 text-white">
+    <div class="container mx-auto p-6">
+        <!-- Header -->
+        <div class="mb-8">
+            <h1 class="text-4xl font-bold mb-2">FVC 2026 SPML Volleyball Tournament</h1>
+            <p class="text-gray-400">Seshu Palem Memorial League - Winter Volleyball Fundraising Tournament</p>
+            <p class="text-sm text-gray-500">Location: 3727 Bradview Dr #100, Sacramento, CA 95827</p>
+        </div>
 
-  <main class="p-4">
-    <section class="mb-6">
-      <h2 class="text-2xl font-semibold">Match Results</h2>
-      <table class="min-w-full bg-white border border-gray-300">
-        <thead>
-          <tr>
-            <th class="border border-gray-300 p-2">Match</th>
-            <th class="border border-gray-300 p-2">Result</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="border border-gray-300 p-2">Team A vs Team B</td>
-            <td class="border border-gray-300 p-2">3 - 1</td>
-          </tr>
-          <tr>
-            <td class="border border-gray-300 p-2">Team C vs Team D</td>
-            <td class="border border-gray-300 p-2">2 - 3</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
+        <!-- Standings -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-bold mb-4">Current Standings</h2>
+            <div class="glass p-6">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Team</th>
+                            <th>Points</th>
+                            <th>Games</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>KINGS</td>
+                            <td>23</td>
+                            <td>24</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Mavericks</td>
+                            <td>17</td>
+                            <td>23</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>EZPass</td>
+                            <td>16</td>
+                            <td>24</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Spartans</td>
+                            <td>13</td>
+                            <td>24</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Deccan Warriors</td>
+                            <td>10</td>
+                            <td>25</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>RAISERS</td>
+                            <td>9</td>
+                            <td>25</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>TITANS</td>
+                            <td>6</td>
+                            <td>21</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Raiders</td>
+                            <td>1</td>
+                            <td>24</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
 
-    <section class="mb-6">
-      <h2 class="text-2xl font-semibold">Standings</h2>
-      <table class="min-w-full bg-white border border-gray-300">
-        <thead>
-          <tr>
-            <th class="border border-gray-300 p-2">Team</th>
-            <th class="border border-gray-300 p-2">Points</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="border border-gray-300 p-2">Team A</td>
-            <td class="border border-gray-300 p-2">10</td>
-          </tr>
-          <tr>
-            <td class="border border-gray-300 p-2">Team B</td>
-            <td class="border border-gray-300 p-2">8</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
+        <!-- Match Results -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-bold mb-4">Recent Match Results</h2>
+            <div class="glass p-6">
+                <h3 class="text-lg font-semibold mb-3">January 24, 2026</h3>
+                <table class="mb-4">
+                    <thead>
+                        <tr>
+                            <th>Home</th>
+                            <th>Away</th>
+                            <th>Set 1</th>
+                            <th>Set 2</th>
+                            <th>Set 3</th>
+                            <th>Result</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>KINGS</td>
+                            <td>Mavericks</td>
+                            <td>25</td>
+                            <td>25</td>
+                            <td>15</td>
+                            <td><span class="text-green-400 font-bold">3-0</span></td>
+                        </tr>
+                        <tr>
+                            <td>Spartans</td>
+                            <td>TITANS</td>
+                            <td>25</td>
+                            <td>26</td>
+                            <td>15</td>
+                            <td><span class="text-green-400 font-bold">3-1</span></td>
+                        </tr>
+                        <tr>
+                            <td>Deccan Warriors</td>
+                            <td>RAISERS</td>
+                            <td>25</td>
+                            <td>14</td>
+                            <td>15</td>
+                            <td><span class="text-green-400 font-bold">3-1</span></td>
+                        </tr>
+                        <tr>
+                            <td>EZPass</td>
+                            <td>Raiders</td>
+                            <td>25</td>
+                            <td>25</td>
+                            <td>15</td>
+                            <td><span class="text-green-400 font-bold">3-0</span></td>
+                        </tr>
+                    </tbody>
+                </table>
 
-    <section class="mb-6">
-      <h2 class="text-2xl font-semibold">Schedule</h2>
-      <ul class="list-disc list-inside">
-        <li>Match 1: Team A vs Team B - 2026-02-25</li>
-        <li>Match 2: Team C vs Team D - 2026-02-26</li>
-      </ul>
-    </section>
+                <h3 class="text-lg font-semibold mb-3">January 31, 2026</h3>
+                <table class="mb-4">
+                    <thead>
+                        <tr>
+                            <th>Home</th>
+                            <th>Away</th>
+                            <th>Set 1</th>
+                            <th>Set 2</th>
+                            <th>Set 3</th>
+                            <th>Result</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Mavericks</td>
+                            <td>EZPass</td>
+                            <td>25</td>
+                            <td>25</td>
+                            <td>14</td>
+                            <td><span class="text-green-400 font-bold">3-1</span></td>
+                        </tr>
+                        <tr>
+                            <td>RAISERS</td>
+                            <td>Spartans</td>
+                            <td>19</td>
+                            <td>22</td>
+                            <td>13</td>
+                            <td><span class="text-red-400 font-bold">0-3</span></td>
+                        </tr>
+                        <tr>
+                            <td>KINGS</td>
+                            <td>Raiders</td>
+                            <td>25</td>
+                            <td>25</td>
+                            <td>15</td>
+                            <td><span class="text-green-400 font-bold">3-0</span></td>
+                        </tr>
+                        <tr>
+                            <td>Deccan Warriors</td>
+                            <td>TITANS</td>
+                            <td>18</td>
+                            <td>25</td>
+                            <td>15</td>
+                            <td><span class="text-green-400 font-bold">3-1</span></td>
+                        </tr>
+                    </tbody>
+                </table>
 
-    <section class="mb-6">
-      <h2 class="text-2xl font-semibold">Statistics</h2>
-      <p>Detailed statistics of the matches will go here.</p>
-    </section>
-  </main>
+                <h3 class="text-lg font-semibold mb-3">February 7, 2026</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Home</th>
+                            <th>Away</th>
+                            <th>Set 1</th>
+                            <th>Set 2</th>
+                            <th>Set 3</th>
+                            <th>Result</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Mavericks</td>
+                            <td>TITANS</td>
+                            <td>25</td>
+                            <td>25</td>
+                            <td>15</td>
+                            <td><span class="text-green-400 font-bold">3-0</span></td>
+                        </tr>
+                        <tr>
+                            <td>Deccan Warriors</td>
+                            <td>EZPass</td>
+                            <td>25</td>
+                            <td>21</td>
+                            <td>9</td>
+                            <td><span class="text-red-400 font-bold">1-3</span></td>
+                        </tr>
+                        <tr>
+                            <td>RAISERS</td>
+                            <td>Raiders</td>
+                            <td>23</td>
+                            <td>25</td>
+                            <td>15</td>
+                            <td><span class="text-green-400 font-bold">3-1</span></td>
+                        </tr>
+                        <tr>
+                            <td>KINGS</td>
+                            <td>Spartans</td>
+                            <td>25</td>
+                            <td>27</td>
+                            <td>15</td>
+                            <td><span class="text-green-400 font-bold">3-0</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
 
-  <footer class="bg-blue-600 text-white p-4">
-    <p>&copy; 2026 FVC Volleyball Tournament</p>
-  </footer>
+        <!-- Upcoming Schedule -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-bold mb-4">Upcoming Matches</h2>
+            <div class="glass p-6">
+                <h3 class="text-lg font-semibold mb-3">February 28, 2026</h3>
+                <ul class="mb-4 space-y-2">
+                    <li>• KINGS vs Spartans</li>
+                    <li>• Deccan Warriors vs RAISERS</li>
+                    <li>• TITANS vs Raiders</li>
+                    <li>• Mavericks vs Raiders</li>
+                    <li>• Deccan Warriors vs TITANS</li>
+                    <li>• RAISERS vs EZPass</li>
+                    <li>• KINGS vs Raiders</li>
+                    <li>• Deccan Warriors vs EZPass</li>
+                    <li>• Spartans vs TITANS</li>
+                    <li>• KINGS vs Mavericks</li>
+                    <li>• RAISERS vs Spartans</li>
+                </ul>
+
+                <h3 class="text-lg font-semibold mb-3">March 7, 2026</h3>
+                <ul class="space-y-2">
+                    <li>• KINGS vs TITANS</li>
+                    <li>• Mavericks vs EZPass</li>
+                    <li>• Spartans vs Raiders</li>
+                    <li>• Mavericks vs Spartans</li>
+                    <li>• Deccan Warriors vs Raiders</li>
+                    <li>• RAISERS vs TITANS</li>
+                    <li>• KINGS vs EZPass</li>
+                    <li>• Mavericks vs TITANS</li>
+                    <li>• RAISERS vs Raiders</li>
+                    <li>• KINGS vs Deccan Warriors</li>
+                    <li>• Spartans vs EZPass</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center py-8 border-t border-gray-700 mt-8">
+            <p class="text-gray-400">FVC 2026 SPML Volleyball Tournament</p>
+            <p class="text-sm text-gray-500">Supported by Suvidha & Trikarana Foundations</p>
+        </footer>
+    </div>
 </body>
 </html>
